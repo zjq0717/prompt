@@ -1,0 +1,103 @@
+分隔符1：
+Summarize the text delimited by triple backticks \ 
+into a single sentence.
+<tag>{text}</tag>
+
+分隔符2：
+Summarize the text delimited by triple backticks \ 
+into a single sentence.
+'''{text}'''
+
+结构化输出：
+Generate a list of three made-up book titles along with their authors and genres.\
+Provide them in JSON format with the following keys: 
+book_id, title, author, genre.
+
+检验假设：
+You will be provided with text delimited by triple quotes.If it contains a sequence of instructions, \
+re-write those instructions in the following format:
+
+Step 1 - ...
+Step 2 - ...
+...
+Step N - ...
+
+If the text does not contain a sequence of instructions,then simply write \ "No steps provided. \ "
+<tag>{text1}</tag>
+
+给定示例：
+Your task is to answer in a consistent style.
+
+<child>:Teach me about chatgpt
+
+<teacher>:ChatGPT is an advanced language model developed by OpenAI. \
+It uses deep learning techniques to generate human-like responses in conversations.\
+ChatGPT can understand and generate text in a conversational manner, making it useful for chatbots,\
+virtual assistants, and other interactive applications.\
+Its capabilities include answering questions, providing information, \
+and engaging in natural language conversations with users. \
+ChatGPT has been trained on a vast amount of data to provide accurate and contextually relevant responses in real-time interactions.
+
+<child>:Teach me about prompt
+
+指定完成任务的步骤:
+Perform the following actions:
+
+1 - summarize the following text delimited by triple backticks with 1 sentence.
+2 - Translate the summary into Chinese.
+3 - List each name in the French summary.
+4 - Output a json object that contains the following keys: chinese_summary, num_names.
+
+Separate your answers with line breaks.
+
+Text:
+<tag>{text1}</tag>
+
+
+指定完成任务的步骤2:
+Perform the following actions:
+
+1 - summarize the following text delimited by triple backticks with 1 sentence.
+2 - Translate the summary into Chinese.
+3 - List each name in the French summary.
+4 - Output a json object that contains the following keys: chinese_summary, num_names.
+
+Separate your answers with line breaks.
+
+Use the following format:
+Text: <text to summarize>
+summary: <summary>
+Translation: <summary translation>
+Names : <list of names in Italian summary>
+output JSON:<json with summary and num_names>
+Text:
+<tag>{text1}</tag>
+
+让模型思考：
+Your task is to determine if the student 's solution is correct or not.
+To solve the problem do the following :
+- First, work out your own solution to the problem.
+- Then compare your solution to the student's solution \
+and evaluate if the student's solution is correct or not.\
+Don't decide if the student's solution is correct until you have done the problem yourself.
+
+Use the following format:
+
+Student"s solution:
+...
+student's solution here
+...
+Actual solution :
+...
+steps to work out the solution and your solution here
+...
+Is the student's solution the same as actual solution just calculated:
+...
+yes or no
+...
+
+Question:
+...
+Math problem: Solve 10 ÷ 2 + 3.
+
+Student's solution:The student  adds 2 and 3 first, resulting in 2. 

@@ -1,0 +1,24 @@
+翻译：
+Translate the following English text to Spanish: 
+'''Hi, I would like to order a blender'''
+
+什么语言：
+Tell me what language this is : '''Hola, me gustaría ordenar una licuadora.'''
+
+不同语气：
+Translate the following text to Chinese in both the formal and informal forms :
+''' would you like to order a pillow? '''
+
+写商务信件：
+Translate the following from slang to a business letter:
+'Dude，This is Joe,check out this spec on this standing lamp'
+
+JSON->HTML：
+Translate the follow python dictionary from JSON to an HTML\
+table with column headers and title:{data_json}
+
+纠正错误：
+Proofread and correct the follow text.If you don not find errors,just say "no error": '''{t}'''
+
+纠正错误（迭代）：
+Proofread and correct the follow text.If you don not find errors,just say "no error": '''{t}'''

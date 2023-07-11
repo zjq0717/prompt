@@ -1,0 +1,42 @@
+询问情感：
+what is the sentiment of the following product review, which is delimited with triple backticks?
+Review text:'''{text}'''
+
+给出确定回答:
+what is the sentiment of the following product review, which is delimited with triple backticks?
+Give your answer as a single word, either "positive" or "negative" .
+Review text:'''{text}'''
+
+给出文章表达的多个情感：
+Identify a list of emotions that the writer of the following review is expressing. \
+Include no more than five items in the list. Format your answer as a list of lower-case words separated by commas.
+Review text:'''{text}'''
+
+针对情感回答是否：
+Is the writer of the following review expressing anger? The review is delimited with triple backticks. 
+Give your answer as either yes or no.
+Review text:'''{text}'''
+
+以JSON数组格式列出情感以及文章中提到的产品：
+Identify the following items from the review text:
+-sentiment ( positive or negative)
+-Is the reviewer expressing anger? (true or false)
+-Item purchased by reviewer
+-Company that made the item
+The review is delimited with triple backticks. Format your response as a JSON object with .
+"sentiment" , "Anger" , "Item" and "Brand" as the keys.If the information isn't present, use "unknown"as the value.
+Make your response as short as possible.Format the Anger value as a boolean.
+Review text:'''{text}'''
+
+给出文章中涉及到的主题：
+Determine five topics that are being discussed in the following text, which is delimited by triple backticks.
+Make each item one or two words long.
+Format your response as a list of items separated by commas.
+Text:'''{story}'''
+
+主题出现的次数：
+Determine whether each item in the following list of topics is a topic in the text below, which\
+is delimited with triple backticks.
+Give your answer as list with 0 or 1 for each topic.
+List of topics:{",".join(topic_list)}
+Text:'''{story}'''

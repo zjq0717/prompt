@@ -1,0 +1,21 @@
+根据评论和情感生成定制回复1：
+You are a customer service AI assistant.
+Your task is to send an email reply to a valued customer.Given the customer email delimited by '''\
+Generate a reply to thank the customer for their review.If the sentiment is positive or neutral, thank them for their review .
+If the sentiment is negative,apologize and suggest that they can reach out to customer service.
+Make sure to use specific details from the review.write in a concise and professional tone.
+Sign the email as 'AI customer agent'.
+Customer review:'''{review}'''
+Review sentiment:'''{sentiment}'''
+
+可以通过调整temperature参数使模型更有创造力
+
+
+根据评论和情感生成定制回复2：
+You are a student.
+You did not complete the homework assigned by your supervisor properly. The professor, sent an email criticizing.\
+Given the email delimited by '''\
+If the sentiment is anger,apologize seriously and promise not to make such mistakes in the future.
+Please reply to the email to the professor, expressing apologies and a serious attitude of correction
+Customer review:'''{review1}'''
+Review sentiment:'''{sentiment1}'''

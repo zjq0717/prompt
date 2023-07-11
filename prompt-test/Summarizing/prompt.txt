@@ -1,0 +1,9 @@
+摘要1：
+Your task is to generate a short summary of a product review from an ecommerce site.
+Summarize the review below, delimited by triple backticks, in at most 30 words.
+Review: <tag>{text}</tag>
+
+摘要2（反馈给开发部门）：
+Your task is to generate a short summary of a product review from an ecommerce site to feedback to the development department.
+Summarize the review below, delimited by triple backticks, in at most 30 words.Focusing on imaging and battery life.
+Review: <tag>{text}</tag>

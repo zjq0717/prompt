@@ -1,0 +1,23 @@
+迭代1：
+Your task is to write a promotional draft for the movie from the perspective of the promotional side,\
+in order to attract the audience's attention.
+<tag>{text}</tag>
+
+迭代2：
+Your task is to write a promotional draft for the movie from the perspective of the promotional side,\
+in order to attract the audience's attention.
+
+Up to 200 words.
+
+<tag>{text}</tag>
+
+迭代3：
+Your task is to write a promotional draft for the movie from the perspective of the promotional side,\
+in order to attract the audience's attention.
+
+This promotional manuscript is prepared for audiences who value actors, \
+introducing the actors and their performances
+
+Up to 200 words.
+
+<tag>{text}</tag>
